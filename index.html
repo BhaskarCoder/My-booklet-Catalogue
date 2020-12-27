@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Book-List</title>
+  <link rel="icon" href="https://img.icons8.com/color/48/000000/story-book.png"/>
+  <script src="https://kit.fontawesome.com/3fdfb0b288.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  
+  <style type="text/css" media="all">
+    #customDiv{
+      position:relative;
+      bottom:50px;
+      right:10px;
+      text-align:center;
+      font-weight:bolder;
+    }
+    
+  </style>
+</head>
+
+<body style="background:#F7DBB1">
+  <div class="container" style="margin:10px">
+    <i class="fas fa-book-reader text-info" style="font-size: 60px;position:relative;right:15px;top:5px"></i>
+    <h1 class="display-4" style="margin: auto;margin-left:50px;position:relative;bottom:7vh">My<span class="text-info" style="font-weight: bolder;">BOOK</span>List</h1>
+    <hr style="position:relative;right:10px;bottom:50px" />
+    
+    
+    
+    
+    <form id="form-id" style="margin:0px;position:relative;bottom:50px;right:8px">
+      <fieldset>
+        <legend style="text-decoration:underline">PUBLICATION</legend>
+        <div class="form-group">
+          <label for="bookName">Tital</label>
+          <input type="text" class="form-control" id="bookName" placeholder="Enter the book name">
+        </div>
+        <div class="form-group">
+          <label for="authorName">Author</label>
+          <input type="text" class="form-control" id="authorName" placeholder="Enter the name of writer">
+        </div>
+        <div class="form-group">
+          <label for="isbnCode">ISBN#</label>
+          <input type="number" class="form-control" id="isbnCode" placeholder="Enter your commercial book identifier">
+        </div>
+        <small id="emailHelp" class="form-text text-muted" style="margin-top:0px;position:relative;bottom:12px;left:3px">An ISBN is assigned to each separate edition and variation of a publication which is intended to be unique. </small>
+        <!--<button type="submit" class="btn btn-primary"><strong>SUBMIT</strong></button>-->
+        <input type="submit" name="button" id="addBtn" value="ADD BOOK" class="btn-info btn-block" style="font-weight: bolder;" />
+        <hr />
+      </fieldset>
+    </form>
+    <table class="table table-striped" style="position:relative;right:10px;bottom:50px;">
+      <thead>
+        <tr>
+          <th id="the1" style="background-color:#F7DBB1">Book<i class="fas fa-book"></i></th>
+          <th style="background-color:#F7DBB1">Author<i class="fas fa-user-tie"></i></th>
+          <th style="background-color:#F7DBB1">ISBN#<i class="fas fa-barcode"></i></th>
+          <th style="background-color:#F7DBB1"></th>
+        </tr style="background-color:#F7DBB1">
+      </thead>
+      <tbody id="bookList">
+      </tbody>
+    </table>
+  </div>
+ <script src="app.js"></script>
+</body>
+</html>
